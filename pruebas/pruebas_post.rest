@@ -1,0 +1,39 @@
+GET http://localhost:3000/api/posts
+
+###
+
+GET http://localhost:3000/api/posts/getById/9
+
+###
+
+GET http://localhost:3000/api/posts/autor/1
+
+###
+
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "Las pilas 2",
+    "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+    "fecha_creacion": "2025-12-07",
+    "categoria": 2,
+    "autores_id": 1
+}
+
+###
+
+PUT http://localhost:3000/api/posts/11
+Content-Type: application/json
+
+{
+    "titulo": "Las aves_2",
+    "descripcion": "Reprehenderit_2 alias deserunt fugiat ipsum, quo dolorem post_.",
+    "fecha_creacion": "2025-12-10",
+    "categoria": 1,
+    "autores_id": 1
+}
+
+###
+
+DELETE http://localhost:3000/api/posts/11

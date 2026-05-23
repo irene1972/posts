@@ -103,6 +103,7 @@ details.
 Example of API calls:
 
 #### AUTORES
+
 GET http://localhost:3000/api/autores
 
 GET http://localhost:3000/api/autores/getById/2
@@ -126,3 +127,35 @@ Content-Type: application/json
 }
 
 DELETE http://localhost:3000/api/autores/10
+
+#### POSTS
+
+GET http://localhost:3000/api/posts
+
+GET http://localhost:3000/api/posts/getById/10
+
+GET http://localhost:3000/api/posts/autor/2
+
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "Los lobos",
+    "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+    "fecha_creacion": "2025-12-07",
+    "categoria": 1,
+    "autores_id": 2
+}
+
+PUT http://localhost:3000/api/posts/10
+Content-Type: application/json
+
+{
+    "titulo": "Las aves_2",
+    "descripcion": "Reprehenderit_2 alias deserunt fugiat ipsum, quo dolorem post_.",
+    "fecha_creacion": "2025-12-10",
+    "categoria": 1,
+    "autores_id": 1
+}
+
+DELETE http://localhost:3000/api/posts/10
